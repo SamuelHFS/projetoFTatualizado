@@ -1,0 +1,343 @@
+			/*Arquivo CSS
+			<link rel="shortcut icon" href="https://static-assets-prod.epicgames.com/fortnite/static/webpack/../favicon.ico"*/
+
+			
+
+			#pagina{
+				background-color:rgb(255, 255, 255);
+				color:rgb(0, 0, 0);
+				margin: 0;
+			}
+			.materia{	
+				
+				background-color:#68c8ef;
+				color: rgb(0, 0, 0);
+			}
+			.rodape{
+				background-color: #2a2a2a;
+				color: rgb(255, 0, 0)
+			}
+			header{
+				
+
+				width:100%;
+				height: 700px;
+				background-color:rgb(255, 255, 255);
+				background-image: url('imagens/Fortnite.jpg');
+				
+				background-repeat: no-repeat;
+				background-attachment: fixed;
+				background-position: center;
+				background-size: 100%;
+				color: black;
+				text-align: center;
+				
+			}
+			
+			.carousel {
+				width: 1px;
+				margin: 0 auto;
+			}
+			.navigation{
+				 display: flex;
+				 position: relative;
+				 float:right;
+			}
+			.botao {
+				
+				/*z-index: 0;*/
+				font-family: 'Burbank Big Cd Bk', sans serif;
+				background: #faec28;
+    			clip-path: polygon(0% 20%, 100% 6%, 98% 100%, 2% 90%);
+    			padding: 0.3875em 1em 0.125em;
+    			display: inline-block;
+    			padding: 10px 12px;
+    			margin-bottom: 0;
+    			font-size: 50px;
+    			font-weight: 400;
+    			line-height: 1.42857143;
+    			text-align: center;
+    			white-space: nowrap;
+    			vertical-align: middle;
+    			-ms-touch-action: manipulation;
+    			touch-action: manipulation;
+    			cursor: pointer;
+    			-webkit-user-select: none;
+    			-moz-user-select: none;
+    			-ms-user-select: none;
+    			user-select: none;
+    			background-image: none;
+    			border: 1px solid transparent;
+    			border-radius: 4px;
+				
+			}
+			
+			.botao span {
+				cursor: pointer;
+				display: inline-block;
+				position: relative;
+				transition: 0.5s;
+			}
+			
+			.botao span:after {
+				content: '\00bb';
+				position: absolute;
+				opacity: 0;
+				top: 0;
+				right: -20px;
+				transition: 0.5s;
+			}
+			
+			.botao:hover span {
+				padding-right: 25px;
+			}
+			
+			.botao:hover span:after {
+				opacity: 1;
+				right: 0;
+			}
+
+			@font-face {
+				font-family: 'Burbank Big Cd Bk';
+				src: url('fontes/BurbankBigCondensed-Black.woff2') format('woff2'),
+					url('fontes/BurbankBigCondensed-Black.woff') format('woff');
+				font-weight: 100;
+				font-style: normal;
+				font-display: swap;
+			}
+
+
+			h1{
+				margin:0;
+				padding-top: 50px;
+				font-family: 'Burbank Big Cd Bk', sans serif;
+				font-size:100px;
+				color: white;
+				text-shadow: 1px 1px 3px #000;
+			}
+			h2{
+				margin:0;
+				padding-top: 10px;
+				font-family: 'Burbank Big Cd Bk', sans serif;
+				font-size:50px;
+				color: white;
+				text-shadow: 1px 1px 3px #000;
+			}
+			h3{
+				/*
+				
+				display: inline;
+				padding-top: 0px;
+				color: rgb(240, 0, 0);
+				width:400px;
+				height:150px;*/
+				
+				font-family: 'Burbank Big Cd Bk', sans serif;
+				color: rgb(173, 13, 13);
+				display: inline;
+				width:290px;
+				height:150px;
+				padding-top: -100px;
+    			font-size: 30px;
+    			margin-top: 40px;
+     			padding-left:  0px;
+    			float: left;
+    			text-transform: uppercase;
+    			white-space: nowrap;
+			}
+			h4{
+				font-family: 'Burbank Big Cd Bk', sans serif;
+				padding-top:400px;
+				display: inline;
+				font-size: 50px;
+				/*padding-top: 200px;*/
+				color: rgb(0, 0, 0);
+				width:400px;
+				height:150px;
+			}
+			h5{
+				font-family: 'Open Sans', sans serif;
+				display: inline;
+				color:rgb(218, 0, 0)
+				/*padding-top: 10px;*/
+				/*color: white;*/
+				/*width:400px;
+				height:150px;*/
+			}
+
+			.corpo{
+				width: 997px;
+				margin:auto;
+			}
+			.conteudo{
+				display: table;
+			}
+			.imagem{
+				display: table-cell;
+			}
+			.texto{
+				display: table-cell;
+				float: left;
+				width: 0px;
+				margin-top: -20px;
+				margin-left: 20;
+			}
+			p{
+				font-family: 'Burbank Big Cd Bk', sans serif;
+				/*padding-top: 10px;*/
+				color: rgb(0, 0, 0);
+				width:400px;
+				height:150px;
+			}
+			.logoepic{
+					width: 50px;
+					background-color: none;
+					position:relative ;
+					display: block;
+					padding: 0;
+					top: 2;
+					left: 0;
+					float: left;
+					width: 5em;
+    margin-left: 0;
+			}
+			.logo{
+				margin-top: -10px;
+					position:relative;
+					display: block;
+					padding-bottom: 5;
+					top: 0;
+					float: left;
+					height: 32px;
+				}
+			nav{
+				height: 55.555555px;
+				z-index: 100;
+				position: fixed;
+				font-family: 'Open Sans';
+				text-align:center;
+				position: static;
+				top:0;
+				padding:0;
+				background-color: #2a2a2a;
+			}
+
+			ul{
+				
+			margin:0;
+			
+
+			}
+
+			li{
+				
+				/*marging:#000000;*/
+				margin-left: 0px;
+				display: inline-block;
+				/*padding: 20px;*/
+			}
+			a{
+
+			text-transform: capitalize;
+			text-decoration:none;
+			display: inline-block;
+			text-transform: uppercase;
+			padding:20px;
+			color: white;
+			}
+
+			a:hover{
+				font-weight: bold;
+				color:#000000;
+
+				background-color: none;
+			}
+			a:hover{
+				
+			font-weight: bold;
+			color:#000000;
+			background-color: #faec28;
+			}
+			.ativo{
+				
+				color:black;
+			background-color: #faec28;
+			}
+			ul ul{
+				position: absolute;
+				min-width: 200px;
+				display: none;
+				background: #faec28;
+			}
+			ul ul li{
+				display: block;
+				background:#2a2a2a;
+			}
+
+			ul li:hover ul{
+				display:block;
+			}
+
+
+			input[type=text] {
+				cursor: pointer;
+				width: 2px;
+				box-sizing: border-box;
+				border: 0px solid #2a2a2a;
+				border-radius: 4px;
+				font-size: 16px;
+				background-color: #2a2a2a;
+				background-image: url('imagens/pesquisar.png');
+				float:left;
+				background-position: -4px -2px; 
+				background-repeat: no-repeat;
+				padding: 12px 20px 12px 40px;
+				-webkit-transition: width 0.3s ease-in-out;
+				transition: width 0.4s ease-in-out;
+				margin-top:5px;
+			  }
+			  
+			  input[type=text]:focus {
+				width: 30%;
+			  }
+
+			.fa {
+				padding: 20px;
+				font-size: 30px;
+				width: 50px;
+				text-align: center;
+				text-decoration: none;
+				
+				
+			  }
+			  
+			  .fa:hover {
+				  opacity: 0.7;
+			  }
+ 
+
+			  
+.fa-facebook {
+	background: #3B5998;
+	color: white;
+  }
+			
+  .caixa{
+	position: fixed;
+	
+    text-align: center;
+    background-color:#faec28;
+    color:rgb(255, 255, 255);
+    width: 20%;
+    height: 13%;
+    
+    /*margin-left: 100%;*/
+    margin-right: 79.9%;
+    padding-bottom: -10px;
+    margin-top: -121.30%;
+
+}
+
+
+
+

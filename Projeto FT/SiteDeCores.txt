@@ -1,0 +1,196 @@
+https://imagecolorpicker.com/color-code/68c8ef
+https://www.blogson.com.br/como-formatar-campos-de-cpf-cep-telefone-e-moeda-com-jquery-jmask/
+
+
+_____________________
+ 
+	    css
+_____________________
+    position: fixed;
+    border: none;
+    width: 100%;
+    height: 808px;
+    margin-left: -4px;
+    top: -150px;
+}
+
+.trs {
+    -webkit-transition:all ease-out 0.5s;
+    -moz-transition:all ease-out 0.5s;
+    -o-transition:all ease-out 0.5s;
+    -ms-transition:all ease-out 0.5s;
+    transition:all ease-out 0.5s;
+}  
+
+#slider {
+    position: relative; 
+}
+
+#slider a { 
+    position: absolute;
+    top: 0; 
+    left: 0; 
+    opacity: 0;
+    filter:alpha(opacity=0);
+}
+
+.ativo {
+    opacity: 1!important; 
+    filter: alpha(opacity=100)!important;
+}
+
+figure:hover span {
+    opacity: 0.76;
+    filter:alpha(opacity=76);
+}
+    
+figure {
+    max-width: 100%;
+    height: 650px;
+    position: fixed;
+    overflow: hidden;
+    margin: 0px auto;
+}
+
+teste
+
+_____________________
+ 
+	    js
+_____________________
+
+function setaImagem(){
+    var settings = {
+        primeiraImg: function(){
+            elemento = document.querySelector("#slider a:first-child");
+            elemento.classList.add("ativo");
+            this.legenda(elemento);
+        },
+
+        slide: function(){
+            elemento = document.querySelector(".ativo");
+
+            if(elemento.nextElementSibling){
+                elemento.nextElementSibling.classList.add("ativo");
+                settings.legenda(elemento.nextElementSibling);
+                elemento.classList.remove("ativo");
+            }else{
+                elemento.classList.remove("ativo");
+                settings.primeiraImg();
+            }
+
+        },
+
+        proximo: function(){
+            clearInterval(intervalo);
+            elemento = document.querySelector(".ativo");
+
+            if(elemento.nextElementSibling){
+                elemento.nextElementSibling.classList.add("ativo");
+                settings.legenda(elemento.nextElementSibling);
+                elemento.classList.remove("ativo");
+            }else{
+                elemento.classList.remove("ativo");
+                settings.primeiraImg();
+            }
+            intervalo = setInterval(settings.slide,4000);
+        },
+
+        anterior: function(){
+            clearInterval(intervalo);
+            elemento = document.querySelector(".ativo");
+
+            if(elemento.previousElementSibling){
+                elemento.previousElementSibling.classList.add("ativo");
+                settings.legenda(elemento.previousElementSibling);
+                elemento.classList.remove("ativo");
+            }else{
+                elemento.classList.remove("ativo");                     
+                elemento = document.querySelector("a:last-child");
+                elemento.classList.add("ativo");
+                this.legenda(elemento);
+            }
+            intervalo = setInterval(settings.slide,3000);
+        },
+
+        legenda: function(obj){
+            var legenda = obj.querySelector("img").getAttribute("alt");
+            document.querySelector("figcaption").innerHTML = legenda;
+        }
+
+    }
+
+    //chama o slide
+    settings.primeiraImg();
+
+    //chama a legenda
+    settings.legenda(elemento);
+
+    //chama o slide à um determinado tempo
+    var intervalo = setInterval(settings.slide,3000);
+    document.querySelector(".next").addEventListener("click",settings.proximo,false);
+    document.querySelector(".prev").addEventListener("click",settings.anterior,false);
+    document.querySelector(".ryzen").addEventListener("click",settings.anterior,false);
+}
+
+window.addEventListener("load",setaImagem,false);
+
+
+_____________________
+ 
+	    html
+_____________________
+
+<figure>
+        <span class="trs next"></span>
+        <span class="trs prev"></span>
+        <span class="trs ryzen"></span>
+     
+        <div id="slider">
+           <a href="#" class="trs"><img src="_imagens/Hotel-AMD/WindowHome-HotelAMD.jpg" /></a>
+           <a href="#" class="trs"><img src="_imagens/Hotel-AMD/Desconto-Diarias-Hotel-Porto-Futuro_2.jpg" /></a>
+           <a href="#" class="trs"><img src="_imagens/Hotel-AMD/163798253.jpg" /></a>
+           <a href="#" class="trs"><img src="_imagens/Hotel-AMD/Room-3-Loft-Suite-1920px-400kb-Slider-16x9.jpg" /></a>
+           <a href="#" class="trs"><img src="_imagens/Hotel-AMD/Room-10-andar15.jpg" /></a>
+        </div>
+     
+        <figcaption></figcaption>
+    
+        <script src="js/Hotel/passarImg.js"></script>
+     </figure>
+
+
+
+<label for="especial">Atendimento Especial?</label>
+<select name="especial">
+<option value="nao" selected>Não</option>
+<option value="auditivo" >Deficiente Auditivo</option>
+<option value="cadeirante"> Cadeira de Rodas</option>
+<option value="idoso">Maior de 65 anos</option>
+<option value="gestante">Gestante</option>
+</select>
+
+
+
+body: #161616;
+fundo:#2a2a2a;
+botao: #2a2a2a;
+botao2: #161616;
+
+cnpj: \d{2}\.\d{3}\.\d{3}\/0001-\d{2}
+
+CPF: pattern="\d{3}\.\d{3}\.\d{3}-\d{2}"
+
+email: pattern="[A-Za-z0-9._]+@[a-z]+\.com"
+
+email: ([\w].{3,20})@([\w].+)\.([\w]{3,5})
+
+telefone: \(?\d{2}\)?[\s]{1}?\d?\d{4}-\d{4}
+
+
+placa do carro: [A-Z]{3}-\d{4}
+
+teste
+
+test
+tese

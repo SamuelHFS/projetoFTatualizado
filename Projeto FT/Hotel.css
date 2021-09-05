@@ -1,0 +1,121 @@
+#pagina{
+    background-color:rgb(255, 255, 255);
+    color:rgb(0, 0, 0);
+    margin: 0;
+}
+.rodape{
+    width: 50%;
+    height: 100px;
+    background-color: black;
+    color: white;
+}
+
+header{
+    width:100%;
+    height: 900px;
+    background-color:rgb(255, 255, 255);
+    background-image: url('imagens/Hotel.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: relative;
+    background-size: 95%;
+    color: black;
+    text-align: center;
+    text-shadow: 14px 14px 18px black;
+    font-family: 'Open Sans';
+    content: '\2606';
+   
+
+  
+    
+}
+.texto
+{
+    padding-top: 0%;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-size: 35px;
+}
+
+.teste{
+    text-align: center;
+    background-color: #daa520;
+    color: rgb(255, 255, 255);
+    width: 20%;
+    border-radius: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 50px;
+}
+
+.caixa{
+    text-align: center;
+    background-color:#daa520;
+    color:rgb(255, 255, 255);
+    width: 20%;
+    height: 13%;
+    
+    /*margin-left: 100%;*/
+    margin-left: 75%;
+    padding-bottom: 100px;
+    margin-top: -5%;
+
+}
+
+.promocao{
+    background-image:url('imagens/promocao.png');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: 100%;
+    margin-top: 50%;
+}
+
+.button{
+    width: 70%;
+    height: 10%;
+    background-color: black;
+    font-size: 1.1em;
+    border-radius: 0px;
+    color: white;
+}
+.button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+/*.button span{
+    color: rgb(255, 255, 255);
+    text-align: center;
+    display: block;
+    height: 100%;
+    padding-top: 20px;
+    padding-bottom: -20px;   
+}*/
+
+h3{
+    color: white;
+    font-size: 30px;
+}
+h5{
+    color: white;
+    font-size: 30px;  
+}
+h6{
+    color:white;
+    font-size: 30px;
+    margin-top: 7;
+    font-family: 'Burbank Big Cd Bk';
+}
+@font-face {
+    font-family: 'Burbank Big Cd Bk';
+    src: url('fontes/BurbankBigCondensed-Black.woff2') format('woff2'),
+        url('fontes/BurbankBigCondensed-Black.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+
+

@@ -1,0 +1,42 @@
+-<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
+    <title>Hotel</title>
+    <link rel="stylesheet" href="Hotel.css">
+    <!--<link rel="stylesheet" href="reset.css testeando">-->
+</head>
+<body id= "pagina" >
+
+        <header>
+		    <div class="texto">
+		<h1 id="NomedoHotel" style="content:\2606;"></h1>
+            </div>
+		
+        <div class="teste">
+            <h2> Quartos Vagos</h2>
+            <h3 id="QuartosHotel"></h3>
+            <h2> Reservar Quartos</h2>
+            <h5 id="reservarQuarto"></h5>
+            <button onclick="calcularReserva()" class="button"><span>Reservar Quarto</span></button>
+            
+        </div>
+        
+        <div class="caixa" style="position: fixed;">
+            <img src="imagens/promocao.png" width="200" style="margin-top: -100;" style="text-align: left;">
+            <h6>SÓ HOJE!</h6>
+            <h6 id="data"> </h6>
+
+        </div>
+		</header>
+
+<script src= "js/Hotel.js"></script>
+
+</body>
+</html>
